@@ -1,0 +1,8 @@
+packages:
+    - apps/desafio-33
+    - packages/api-trpc
+    - packages/config
+    - packages/eslint-config-custom
+    - packages/icons
+    - packages/types
+    - packages/ui

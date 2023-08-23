@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "stivo.tailwind-fold"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "name": "desafio-33",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "with-env": "dotenv -e ../../.env --",
+        "dev": "pnpm with-env next dev -p 3033",
+        "build": "next build",
+        "clean": "rm -rf .next .turbo node_modules",
+        "start": "next start",
+        "lint": "pnpm with-env next lint",
+        "type-check": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@lucasfranzolin/api-trpc": "workspace:*",
+        "@lucasfranzolin/icons": "workspace:*",
+        "@lucasfranzolin/ui": "workspace:*",
+        "@t3-oss/env-nextjs": "^0.6.1",
+        "@tanstack/react-query": "^4.16.1",
+        "@trpc/client": "^10.25.0",
+        "@trpc/next": "^10.28.0",
+        "@trpc/react-query": "^10.1.0",
+        "@trpc/server": "^10.25.0",
+        "@vercel/og": "^0.5.6",
+        "next": "^13.4.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "zod": "^3.18.0"
+    },
+    "devDependencies": {
+        "@lucasfranzolin/config": "workspace:*",
+        "@lucasfranzolin/types": "workspace:*",
+        "@types/next": "^9.0.0",
+        "@types/node": "^18.0.0",
+        "@types/react": "^18.0.25",
+        "@types/react-dom": "^18.0.9",
+        "dotenv-cli": "^6.0.0",
+        "tailwindcss": "^3.3.2"
+    }
+}

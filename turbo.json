@@ -1,0 +1,31 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "globalDependencies": ["**/.env", "tsconfig.json"],
+    "pipeline": {
+        "dev": {
+            "dependsOn": ["@lucasfranzolin/icons#build"],
+            "cache": false
+        },
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": [".next/**", "./packages/icons/react/**"]
+        },
+        "lint": {
+            "outputs": []
+        },
+        "clean": {
+            "cache": false
+        },
+        "//#clean": {
+            "cache": false
+        },
+        "type-check": {
+            "cache": false
+        },
+        "desafio-33#build": {
+            "dependsOn": ["^@lucasfranzolin/icons#build"],
+            "cache": false
+        }
+    },
+    "globalEnv": ["NODE_ENV"]
+}
